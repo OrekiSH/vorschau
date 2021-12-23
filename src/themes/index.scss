@@ -1,0 +1,53 @@
+@import "./tooltip.scss";
+
+.demo-block__iframe {
+  border: none;
+  width: 100%;
+}
+
+.demo-block--dumi {
+  border: 1px solid #ebedf1;
+  border-radius: 1px;
+
+  .preview-area {
+    padding: 40px 24px;
+  }
+
+  .sourcecode-area {
+    background-color: #f9fafb;
+    border-top: 1px dashed #ebedf1;
+    overflow: auto;
+    font-size: 1em;
+
+    .pre {
+      line-height: 1.4;
+      padding: 1.25rem 1.5rem;
+
+      .token {
+        .tag {
+          color: #905;
+        }
+      }
+    }
+  }
+
+  .toolbar-area {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 40px;
+    padding: 0 1em;
+    border-top: 1px dashed #ebedf1;
+
+    .toolbar-action {
+      padding: 8px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+  }
+}

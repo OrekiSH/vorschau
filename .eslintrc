@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:import/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/prefer-default-export": 0,
+    "no-underscore-dangle": 0,
+    "import/no-cycle": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-implied-eval": 0
+  }
+}
